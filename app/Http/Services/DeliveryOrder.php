@@ -32,6 +32,6 @@ class DeliveryOrder implements OrderContract
 
         OrderAction::AddItemsToOrder($order);
 
-        return $order;
+        return $order->load('orderItems.item');
     }
 }

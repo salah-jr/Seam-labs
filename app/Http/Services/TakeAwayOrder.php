@@ -16,7 +16,7 @@ class TakeAwayOrder implements OrderContract
         request()->validate(
             [
                 'type' => 'required',
-            ]
+            ],
         );
         $order = new Order();
         $order->type = $this->type;
@@ -24,6 +24,6 @@ class TakeAwayOrder implements OrderContract
 
         OrderAction::AddItemsToOrder($order);
 
-        return $order;
+        return $order->load('orderItems.item');
     }
 }

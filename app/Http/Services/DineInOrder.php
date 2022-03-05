@@ -23,7 +23,6 @@ class DineInOrder implements OrderContract
                 'items' => 'required',
             ]
         );
-
         $order = new Order();
         $order->type = $this->type;
         $order->table_number = $data['table_number'];
