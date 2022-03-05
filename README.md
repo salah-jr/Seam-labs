@@ -2,7 +2,7 @@
 <hr>
 <br>
 
-##Routes
+## Routes
 
 ```
 /* Part One */
@@ -36,7 +36,7 @@ php artisan migrate --seed
 
 <br>
 
-###Request examples..
+### Request examples..
 
 ```json
 {
