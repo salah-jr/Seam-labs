@@ -49,7 +49,7 @@ class AssessmentController extends Controller
         return $result;
     }
 
-    public function problemFour()
+    public function problemFour(): int
     {
         $str = request('input_string');
         $str = strtoupper($str);
@@ -81,8 +81,4 @@ class AssessmentController extends Controller
         return $result;
     }
 
-    public function createOrder()
-    {
-        // To implement later....
-    }
 }
