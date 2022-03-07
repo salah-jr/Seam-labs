@@ -23,7 +23,7 @@ POST    /api/part-two/orders/create
 
 <br>
 
-### Run migration with seeder to add fake 6 items to the menu
+### Run the migrations with seeder to add fake 6 items to the menu
 
 ```
 php artisan migrate --seed
